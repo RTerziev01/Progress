@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="icon" type="image/x-icon" href="../Images/PersonalPage/SunglassesFAV.png">
+</head>
+<body>
+    <form action="http://127.0.0.1:5502/cgi-bin/registration.py?" method="get">
+          <fieldset>
+            <legend>Лични данни</legend>
+            <label for="userName"><b>Име:</b></label>
+                <input type="text" name="userName" id="userName" placeholder="малко име, на латиница">
+                <br>
+                <label for="userSurName"><b>Име:</b></label>
+                <input type="text" name="userSurName" id="userSurName" placeholder="Фамилия, на латиница">
+                <br>
+                <label for="genderM"><b>Пол:</b></label>
+                <label for="genderM" >Мъж</label>
+                <input type="radio" name="gender" id="genderM" value="m" >
+                <label for="genderF">Жена</label>
+                <input type="radio" name="gender" id="genderF" value="f">
+          </fieldset>
+          <label for="comment"><b>Коментар:</b></label>
+          <br>
+          <textarea name="comment" id="comment" cols="25" rows="3" placeholder="Кажете ни нещо"></textarea>
+          <br>
+          <input type="submit" value="Изпрати">
+    </form>
+</body>
+</html>
