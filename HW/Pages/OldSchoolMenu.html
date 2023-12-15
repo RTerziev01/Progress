@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Old School Menu</title>
+    <link rel="icon" type="x-icon/image" href="../Images/PersonalPage/SunglassesFAV.png">
+    <style>
+        body{
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 160px;
+            background-color: rgb(75, 71, 71);
+        }
+        #first-nav{
+            margin-left: 5%;
+        }
+        .navbox{
+            width: 18%;
+            height: 100px;
+            background-color: coral;
+            margin-top: 30px;
+            display: inline-block;
+            position: relative;
+        }
+        .menu{
+            position: absolute;
+            background-color: tan;
+            border: 1px solid green;
+            width: 95%;
+            height: 85%;
+            top: 7.5%;
+            left: 2.5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .menu a {
+            font-size: 30px;
+            text-decoration: none;
+        }
+        #about{
+            background-color: skyblue;
+        }
+      
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="navbox" id="first-nav">
+            <div class="menu">
+                <a href="#">Home</a>
+            </div>
+        </div>
+        <div class="navbox" id="about">
+            <div class="menu">
+                <a href="#">About</a>
+            </div>
+        </div>
+        <div class="navbox">
+            <div class="menu">
+                <a href="#">Menu</a>
+            </div>
+        </div>
+        <div class="navbox">
+            <div class="menu">
+                <a href="#">Gallery</a>
+            </div>
+        </div>
+        <div class="navbox">
+            <div class="menu">
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
