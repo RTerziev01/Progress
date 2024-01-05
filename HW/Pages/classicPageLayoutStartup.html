@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>classicPageLayout</title>
+	<style>
+		body{
+			margin: 0;
+			font-size: 20px;
+			background-color: #FDAFB1;
+		}
+
+		#header,#footer{
+			height: 10vh;
+			margin: 1em;
+			text-align: center;
+			color: #FFF;
+			background-color: #98D1C7;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#header > p {
+			font-size: 50px;
+			color: white;
+		}
+		#aside, #article{
+			display: inline-block;
+			vertical-align: top;
+		}
+		#aside{
+			margin: 1em;
+			width: 30%;
+			height: 70vh;
+			background-color: #62B7B6;
+			float: left;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		#aside p {
+			font-size: 50px;
+			color: white;
+		}
+		#article{
+			position: relative;
+			background-color: #FA7A7B;
+			padding: 1em;
+		    width: calc(100% - 30% - 5em);
+			margin-top: 2em;
+			height: 65.65vh;
+			display: flex;
+            align-items: flex-end;
+            justify-content: center;
+		}
+		#article > p {
+			position: absolute;
+			bottom: 260px;
+			text-align: center;
+			font-size: 50px;
+			color: white;
+		}
+		.img{
+			background-color: #D6D5D5;
+			display: inline-block;
+			width: calc(100% / 3 - 20px);
+			margin: 10px;
+			height: 250px;
+		}
+		#footer{
+			width: 97.8%;
+			position: absolute;
+			bottom: 0;
+		}
+		#footer > p {
+			font-size: 50px;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div id="header"><p>Header</p></div>
+	<div id="aside"><p>Aside</p></div>
+	<div id="article"><p>Article</p>
+		<div class="img"><img src="" alt="Pic"></div>
+		<div class="img"><img src="" alt="Pic"></div>
+		<div class="img"><img src="" alt="Pic"></div>
+	</div>
+	<div id="footer"><p>Footer</p></div>
+</body>
+</html>
