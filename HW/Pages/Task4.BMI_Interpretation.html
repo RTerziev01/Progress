@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Interpretation</title>
+</head>
+<body>
+    <body>
+        <h1>Индекс на Телесната маса (ИМТ)</h1>
+        <form>
+            <label for="weight">Тегло (в килограми):</label>
+            <input type="number" id="weight" name="weight"><br><br>
+            <label for="height">Височина (в сантиметри):</label>
+            <input type="number" id="height" name="height"><br><br>
+            <button type="button" onclick="calculateBMI()">Изчисли ИМТ</button>
+        </form>
+    
+        <script>
+            function calculateBMI() {
+                var weight = document.getElementById("weight").value;
+                var height = document.getElementById("height").value;
+    
+                var bmi = weight / ((height/100) ** 2);
+                console.log("ИМТ: " + bmi.toFixed(2));
+    
+                if (bmi < 18.50) {
+                    console.log("Недостатъчно тегло");
+                } else if (bmi >= 18.50 && bmi <= 24.99) {
+                    console.log("Нормално тегло");
+                } else if (bmi >= 25 && bmi <= 29.99) {
+                    console.log("Наднормено тегло");
+                } else if (bmi >= 30 && bmi <= 34.99) {
+                    console.log("Затлъстяване I степен");
+                } else if (bmi >= 35 && bmi <= 39.99) {
+                    console.log("Затлъстяване II степен");
+                } else {
+                    console.log("Затлъстяване III степен");
+                }
+            }
+        </script>
+    </body>
+    </html>
+</body>
+</html>

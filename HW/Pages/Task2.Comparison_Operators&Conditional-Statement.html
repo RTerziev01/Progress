@@ -1,0 +1,23 @@
+<script>
+    function greetings() {
+        var userTown = document.getElementById("town").value;
+        console.log(userTown);
+        if (userTown === "София") {
+            console.log("Здравей!")
+        } else if (userTown === "Париж") {
+            console.log("Salut!")
+        } else {
+            console.log("Hi!")
+        }
+    }
+    
+</script>
+
+<label for="town">От къде сте?</label>
+<select name="town" id="town">
+    <option value="София">София</option>
+    <option value="Париж">Париж</option>
+    <option value="Лондон">Лондон</option>
+</select>
+<button onclick="greetings();">ОК</button>
+
